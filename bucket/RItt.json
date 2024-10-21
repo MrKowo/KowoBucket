@@ -1,0 +1,16 @@
+{
+  "version": "1.5.3",
+  "descriprion": "Tag-centric file manager",
+  "url": "https://github.com/ritt-app/Ritt-Support/releases/download/1.5.3/Ritt-1.5.3.zip",
+  "extract_dir": "Self-contained",
+  "homepage": "https://ritt.app",
+  "license": "Freeware",
+  "hash": "4685c1cbf396f863f019e5db01b8cd7e3bff6941e093925336ab53169c3bbb78",
+  "bin": "ritt.exe",
+  "shortcuts": [
+          [
+              "ritt.exe",
+              "Ritt"
+          ]
+      ],
+}
