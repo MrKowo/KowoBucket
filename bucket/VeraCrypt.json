@@ -10,7 +10,6 @@
           ]
       ],
   "bin": "VeraCrypt.Portable.1.26.15.exe",
-  "depends": "",
   "version": "1.26.15",
   "license": ""
 }
