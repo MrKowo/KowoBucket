@@ -3,7 +3,9 @@
 <!-- Uncomment the following line after replacing placeholders -->
 [![Tests](https://github.com/MrKowo/KowoBucket/actions/workflows/ci.yml/badge.svg)](https://github.com/MrKowo/KowoBucket/actions/workflows/ci.yml) [![Excavator](https://github.com/MrKowo/KowoBucket/actions/workflows/excavator.yml/badge.svg)](https://github.com/MrKowo/KowoBucket/actions/workflows/excavator.yml)
 
-Template bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
+Scoop Bucket containing apps I use which aren't included in the official ones.
+
+##_work in progress_
 
 ## How do I use this template?
 
