@@ -1,14 +1,21 @@
 {
     "version": "1.26.15",
-    "description": "A free open source disk encryption software for Windows, Mac OSX and Linux based on TrueCrypt.",
-    "homepage": "https://veracrypt.fr",
-    "license": "Apache-2.0",
-    "url": "https://github.com/veracrypt/VeraCrypt/releases/download/VeraCrypt_1.26.15/VeraCrypt.Portable.1.26.15.exe",
-    "hash": "9678c92aea7f557b7522f6dc942fa1d00e813dfde4e7774c61e37c19e914a3a4",
-    "persist": "Configuration.xml",
-    "checkver": {
-        "url": "https://www.veracrypt.fr/en/Downloads.html",
-        "regex": "Latest Stable Release - ([\\d.]+)"
+    "description": "VeraCrypt is a free open source disk encryption software for Windows, Mac OSX and Linux. Brought to you by IDRIX (https://www.idrix.fr) and based on TrueCrypt 7.1a.",
+    "homepage": "https://veracrypt.fr/",
+    "license": "Freeware",
+    "url": "https://launchpad.net/veracrypt/trunk/1.26.15/+download/VeraCrypt_Setup_x64_1.26.15.msi#/setup.msi_",
+    "hash": "b04253864adad522669ad69e94e55945a0736a8c4aeb6742357228120d342cf7",
+    "installer": {
+        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", 'ACCEPTLICENSE=YES', 'DESKTOPICONS=No', '/qn', '/norestart') -RunAs -ContinueExitCodes @{ 3010 = 'A system reboot is required to finalize the installation.' } | Out-Null"
     },
-    "autoupdate": "github"
+    "uninstaller": {
+        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/x', \"$dir\\setup.msi_\", '/qn', '/norestart') -RunAs -ContinueExitCodes @{ 3010 = 'A system reboot is required to finalize the uninstallation.' } | Out-Null"
+    },
+    "checkver": {
+        "url": "https://veracrypt.fr/en/Downloads.html",
+        "regex": "https://launchpad.net/veracrypt/trunk/((\\d(.)?)+)/"
+    },
+    "autoupdate": {
+        "url": "https://launchpad.net/veracrypt/trunk/$version/+download/VeraCrypt_Setup_x64_$version.msi#/setup.msi_"
+    }
 }
