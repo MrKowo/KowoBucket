@@ -20,6 +20,4 @@
         "regex": "Latest Stable Release - ([\\d.]+)"
     },
     "autoupdate": "github"
-        }
-    }
 }
