@@ -1,0 +1,16 @@
+{
+  "homepage": "https://github.com/veracrypt/VeraCrypt",
+  "url": "https://github.com/veracrypt/VeraCrypt/releases/download/VeraCrypt_1.26.15/VeraCrypt.Portable.1.26.15.exe",
+  "extract_dir": "",
+  "hash": "",
+  "shortcuts": [
+          [
+              "VeraCrypt.Portable.1.26.15.exe",
+              "VeraCrypt"
+          ]
+      ],
+  "bin": "VeraCrypt.Portable.1.26.15.exe",
+  "depends": "",
+  "version": "1.26.15",
+  "license": ""
+}
