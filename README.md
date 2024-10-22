@@ -5,7 +5,7 @@
 
 Scoop Bucket containing apps I use which aren't included in the official ones.
 
-##_work in progress_
+## _work in progress_
 
 ## How do I use this template?
 
