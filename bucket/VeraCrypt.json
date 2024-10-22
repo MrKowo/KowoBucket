@@ -1,10 +1,10 @@
 {
-    "version": "1.26.14",
+    "version": "1.26.15",
     "description": "A free open source disk encryption software for Windows, Mac OSX and Linux based on TrueCrypt.",
     "homepage": "https://veracrypt.fr",
     "license": "Apache-2.0",
     "url": "https://github.com/veracrypt/VeraCrypt/releases/download/VeraCrypt_1.26.15/VeraCrypt.Portable.1.26.15.exe",
-    "hash": "",
+    "hash": "9678c92aea7f557b7522f6dc942fa1d00e813dfde4e7774c61e37c19e914a3a4",
     "persist": "Configuration.xml",
     "checkver": {
         "url": "https://www.veracrypt.fr/en/Downloads.html",
