@@ -4,7 +4,7 @@
     "homepage": "https://veracrypt.fr",
     "license": "Apache-2.0",
     "url": "https://github.com/veracrypt/VeraCrypt/releases/download/VeraCrypt_1.26.15/VeraCrypt.Portable.1.26.15.exe",
-    "hash": "https://github.com/veracrypt/VeraCrypt/releases/download/VeraCrypt_1.26.15/VeraCrypt.Portable.1.26.15.exe.sig",
+    "hash": "",
     "pre_install": "If (!(Test-Path \"$persist_dir\\Configuration.xml\")) { New-Item \"$dir\\Configuration.xml\" -ItemType File | Out-Null }",
     "installer": {
         "script": [
