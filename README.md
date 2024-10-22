@@ -10,3 +10,5 @@ To start using the bucket, assuming you have Scoop installed, run the following:
 scoop bucket add KowoBucket https://github.com/MrKowo/KowoBucket
 scoop install KowoBucket/<manifestname>
 ```
+
+A list of the apps included can be found [here](bucket).
