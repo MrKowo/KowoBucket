@@ -8,9 +8,7 @@
   "hash": "4685c1cbf396f863f019e5db01b8cd7e3bff6941e093925336ab53169c3bbb78",
   "bin": "ritt.exe",
   "shortcuts": [
-          [
-              "ritt.exe",
-              "Ritt"
-          ]
-      ],
+             "ritt.exe",
+             "Ritt"
+      ]
 }
