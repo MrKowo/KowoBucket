@@ -8,15 +8,13 @@
     "extract_dir": "DJV-2.0.8-win64/bin",
     "bin": "DJV.exe",
     "shortcuts": [
-              "DJV.exe",
-              "DJV"
-      ],
-    },
+        "DJV.exe",
+        "DJV"
+        ],
     "checkver": {
         "github": "https://github.com/darbyjohnston/DJV",
     },
     "autoupdate": {
         "url": "https://github.com/darbyjohnston/DJV"
         }
-    }
 }
