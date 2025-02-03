@@ -1,6 +1,6 @@
 {
-  "version": "1.12",
-  "url": "https://github.com/SegoCode/AutoWall/releases/download/1.12/AutoWall.zip",
+  "version": "1.13",
+  "url": "https://github.com/SegoCode/AutoWall/releases/download/1.13/AutoWall.zip",
   "extract_dir": "AutoWall",
   "bin": "Autowall.exe",
   "shortcuts": [
