@@ -8,7 +8,9 @@
     "extract_dir": "DJV-2.0.8-win64",
     "bin": "DJV.exe",
     "shortcuts": [
-        "DJV.exe",
-        "DJV"
+        [
+            "DJV.exe",
+            "DJV"
+        ]
     ],
 }
