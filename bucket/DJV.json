@@ -9,7 +9,7 @@
     "bin": "DJV.exe",
     "shortcuts": [
         [
-            "./bin/DJV.exe",
+            "./DJV.exe",
             "DJV"
         ]
     ],
