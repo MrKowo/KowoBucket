@@ -8,11 +8,11 @@
             "url": "https://github.com/darbyjohnston/DJV/releases/download/2.0.8/DJV-2.0.8-win64.zip",
             "hash": "fe8732f822f8502a9a535d6692a241a0ad56890053dcb6990355bad9efa34da5"
         }
+    "extract_dir": "DJV",
+    "bin": "DJV.exe",
     "shortcuts": [
-          [
               "DJV.exe",
               "DJV"
-          ]
       ],
     },
     "checkver": {
