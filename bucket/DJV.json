@@ -30,7 +30,7 @@
     "uninstaller": {
         "script": ""
     },
-    "bin": "",
+    "bin": "DJV.exe",
     "env_add_path": [
         "",
         ""
