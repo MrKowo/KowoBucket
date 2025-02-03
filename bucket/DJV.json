@@ -1,0 +1,62 @@
+{
+    "##": "This file is a template. Fill the blanks and add or remove fields as necessary.",
+    "version": "2.0.8",
+    "description": "DJV provides professional review software for VFX, animation, and film production. Playback high resolution, high bit-depth, image sequences and videos, with frame accurate control and color management. Available for Linux, Apple macOS, and Microsoft Windows. Source code is provided under a BSD style open source license.",
+    "homepage": "https://darbyjohnston.github.io/DJV/",
+    "license": "BSD 3",
+    "notes": "",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/darbyjohnston/DJV/releases/download/2.0.8/DJV-2.0.8-win64.zip",
+            "hash": ""
+        },
+        "32bit": {
+            "url": "",
+            "hash": ""
+        },
+        "arm64": {
+            "url": "",
+            "hash": ""
+        }
+    },
+    "pre_install": "",
+    "installer": {
+        "script": ""
+    },
+    "post_install": [
+        "",
+        ""
+    ],
+    "uninstaller": {
+        "script": ""
+    },
+    "bin": "",
+    "env_add_path": [
+        "",
+        ""
+    ],
+    "persist": [
+        "",
+        ""
+    ],
+    "checkver": {
+        "github": "https://github.com/darbyjohnston/DJV",
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/darbyjohnston/DJV"
+            },
+            "32bit": {
+                "url": ""
+            },
+            "arm64": {
+                "url": ""
+            }
+        },
+        "hash": {
+            "url": "",
+            "regex": ""
+        }
+    }
+}
