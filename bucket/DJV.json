@@ -7,8 +7,8 @@
     "hash": "fe8732f822f8502a9a535d6692a241a0ad56890053dcb6990355bad9efa34da5",
     "extract_dir": "DJV-2.0.8-win64/bin",
     "bin": "DJV.exe",
-    "shortcuts": {
+    "shortcuts": [
         "DJV.exe",
         "DJV"
-    },
+    ],
 }
