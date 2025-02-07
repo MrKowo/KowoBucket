@@ -1,13 +1,17 @@
-# Kowo Scoop Bucket
+# KowoBucket
 
 Scoop Bucket containing apps I use which aren't included in the official ones.
 
-## How do I install these manifests?
+## How do I use this?
 
-Assuming you have [Scoop](https://scoop.sh/) installed, run the following in a powershell window:
+Assuming you have [Scoop](https://scoop.sh/) installed, run the following in a powershell window to add the bucket:
 
 ```pwsh
 scoop bucket add KowoBucket https://github.com/MrKowo/KowoBucket
+```
+To install an app run:
+
+```pwsh
 scoop install KowoBucket/<manifestname>
 ```
 
