@@ -1,0 +1,17 @@
+{
+  "url": "https://github.com/uazo/cromite/releases/tag/v133.0.6943.127-072ad730393e7a3b252645c139bc66e020ec8f87",
+  "bin": "",
+  "extract_dir": "",
+  "hash": "",
+  "version": "v133.0.6943.127-072ad730393e7a3b252645c139bc66e020ec8f87",
+  "license": "",
+  "homepage": "https://cromite.org/",
+   "shortcuts": [
+          [
+             "chrome.exe",
+             "Cromite Browser"
+          ]
+      ],
+  "checkver": "github",
+
+}
