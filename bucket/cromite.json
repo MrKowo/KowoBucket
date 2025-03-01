@@ -11,13 +11,10 @@
           ]
       ],
   "checkver": {
-    "github": "https://github.com/uazo/cromite"
+      "github": "https://github.com/uazo/cromite"
   }
   "autupdate": {
-    "architecture": {
-        "64bit": {
-            "url": "https://github.com/uazo/cromite/releases/download/v$version/chrome-win.zip",
-            "extract_dir": "chrome-win"
-        }
+        "url": "https://github.com/uazo/cromite/releases/download/v$version/chrome-win.zip",
+        "extract_dir": "chrome-win"
     }
 }
