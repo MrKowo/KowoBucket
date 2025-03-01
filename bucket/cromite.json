@@ -12,7 +12,7 @@
       ],
   "checkver": {
       "github": "https://github.com/uazo/cromite"
-  }
+  },
   "autupdate": {
         "url": "https://github.com/uazo/cromite/releases/download/v$version/chrome-win.zip",
         "extract_dir": "chrome-win"
