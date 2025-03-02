@@ -1,19 +1,19 @@
 {
-  "url": "https://github.com/uazo/cromite/releases/download/v133.0.6943.127-072ad730393e7a3b252645c139bc66e020ec8f87/chrome-win.zip",
-  "extract_dir": "chrome-win",
-  "version": "v133.0.6943.127-072ad730393e7a3b252645c139bc66e020ec8f87",
-  "license": "GPL-3.0",
-  "homepage": "https://cromite.org/",
-  "shortcuts": [
-          [
-             "chrome.exe",
-             "Cromite Browser"
-          ]
-      ],
-  "checkver": {
-      "github": "https://github.com/uazo/cromite"
-  },
-  "autoupdate": {
+    "url": "https://github.com/uazo/cromite/releases/download/v133.0.6943.127/chrome-win.zip",
+    "extract_dir": "chrome-win",
+    "version": "133.0.6943.127",
+    "license": "GPL-3.0",
+    "homepage": "https://cromite.org/",
+    "shortcuts": [
+        [
+            "chrome.exe",
+            "Cromite Browser"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/uazo/cromite"
+    },
+    "autoupdate": {
         "url": "https://github.com/uazo/cromite/releases/download/v$version/chrome-win.zip",
         "extract_dir": "chrome-win"
     }
