@@ -1,7 +1,7 @@
 {
-    "url": "https://github.com/uazo/cromite/releases/download/v135.0.7049.52/chrome-win.zip",
+    "url": "https://github.com/uazo/cromite/releases/download/v135.0.7049.100/chrome-win.zip",
     "extract_dir": "chrome-win",
-    "version": "135.0.7049.52",
+    "version": "135.0.7049.100",
     "license": "GPL-3.0",
     "homepage": "https://cromite.org/",
     "shortcuts": [
