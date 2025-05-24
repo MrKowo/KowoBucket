@@ -15,13 +15,15 @@
         "$WshShell = New-Object -ComObject WScript.Shell",
         "$shortcut = $WshShell.CreateShortcut($shortcutPath)",
         "$shortcut.TargetPath = \"$dir\\RightKeyboard.exe\"",
-        "$shortcut.Save()"
+        "$shortcut.Save()",
+        "Write-Host 'Created shortcut in Startup folder at: ' + $shortcutPath",
     ],
     "uninstaller": {
         "post_uninstall": [
             "$startupPath = [Environment]::GetFolderPath('Startup')",
             "$shortcutPath = Join-Path $startupPath 'RightKeyboard.lnk'",
-            "if (Test-Path $shortcutPath) { Remove-Item $shortcutPath }"
+            "if (Test-Path $shortcutPath) { Remove-Item $shortcutPath }",
+            "Write-Host 'Removed shortcut in Startup folder at: ' + $shortcutPath",
         ]
     },
     "checkver": {
