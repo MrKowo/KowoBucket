@@ -10,23 +10,18 @@
         ]
     ],
     "post_install": [
-        "Write-Host '--- DEBUG: Post-install script is running! ---'"
+        "$startupPath = [Environment]::GetFolderPath('Startup')",
+        "$shortcutPath = Join-Path $startupPath 'RightKeyboard.lnk'",
+        "$WshShell = New-Object -ComObject WScript.Shell",
+        "$shortcut = $WshShell.CreateShortcut($shortcutPath)",
+        "$shortcut.TargetPath = \"$dir\\RightKeyboard.exe\"",
+        "$shortcut.Save()"
     ],
     "uninstaller": {
         "post_uninstall": [
             "$startupPath = [Environment]::GetFolderPath('Startup')",
-            "$shortcutName = 'RightKeyboard.lnk'",
-            "$shortcutPath = Join-Path $startupPath $shortcutName",
-            "Write-Host '--- Post-Uninstall Debug ---'",
-            "Write-Host 'Attempting to remove shortcut from Startup folder: ' + $shortcutPath",
-            "if (Test-Path $shortcutPath) {",
-            "  Write-Host 'Shortcut found, attempting removal...'",
-            "  Remove-Item $shortcutPath -Force",
-            "  if (-not (Test-Path $shortcutPath)) { Write-Host 'Shortcut successfully removed.' } else { Write-Host 'Failed to remove shortcut.' }",
-            "} else {",
-            "  Write-Host 'Shortcut not found at the expected path during uninstall.'",
-            "}",
-            "Write-Host '----------------------------'"
+            "$shortcutPath = Join-Path $startupPath 'RightKeyboard.lnk'",
+            "if (Test-Path $shortcutPath) { Remove-Item $shortcutPath }"
         ]
     },
     "checkver": {
