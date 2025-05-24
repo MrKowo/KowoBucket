@@ -17,6 +17,13 @@
         "$shortcut.TargetPath = \"$dir\\RightKeyboard.exe\"",
         "$shortcut.Save()"
     ],
+    "uninstaller": {
+        "post_uninstall": [
+            "$startupPath = [Environment]::GetFolderPath('Startup')",
+            "$shortcutPath = Join-Path $startupPath 'RightKeyboard.lnk'",
+            "if (Test-Path $shortcutPath) { Remove-Item $shortcutPath }"
+        ]
+    },
     "checkver": {
         "github": "https://github.com/mnivet/RightKeyboard"
     },
