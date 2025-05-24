@@ -20,7 +20,7 @@
     "uninstaller": {
         "post_uninstall": [
             "$startupPath = [Environment]::GetFolderPath('Startup')",
-            "$shortcutPath = Join-Path $startupPath '\RightKeyboard.lnk'",
+            "$shortcutPath = Join-Path $startupPath '/RightKeyboard.lnk'",
             "if (Test-Path $shortcutPath) { Remove-Item $shortcutPath } -Force"
         ]
     },
