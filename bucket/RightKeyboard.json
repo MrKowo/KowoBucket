@@ -11,7 +11,7 @@
     ],
        "post_install": [
         "$startupPath = [Environment]::GetFolderPath('Startup')",
-        "$shortcutName = 'RightKeyboard.lnk'", # Define name explicitly
+        "$shortcutName = 'RightKeyboard.lnk'",
         "$shortcutPath = Join-Path $startupPath $shortcutName",
         "$WshShell = New-Object -ComObject WScript.Shell",
         "$shortcut = $WshShell.CreateShortcut($shortcutPath)",
@@ -24,7 +24,7 @@
     "uninstaller": {
         "post_uninstall": [
             "$startupPath = [Environment]::GetFolderPath('Startup')",
-            "$shortcutName = 'RightKeyboard.lnk'", # Use the same name explicitly
+            "$shortcutName = 'RightKeyboard.lnk'",
             "$shortcutPath = Join-Path $startupPath $shortcutName",
             "Write-Host '--- Post-Uninstall Debug ---'",
             "Write-Host 'Attempting to remove shortcut from Startup folder: ' + $shortcutPath",
