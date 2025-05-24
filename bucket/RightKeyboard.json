@@ -21,7 +21,7 @@
         "Write-Host '' ",
         "Write-Host '--- Post-Install Debug ---'",
         "Write-Host 'Created shortcut in Startup folder at: ' ",
-        "Write-Host '$shortcutPath' ",
+        "Write-Host $shortcutPath ",
         "Write-Host '--------------------------'"
     ],
     "uninstaller": {
@@ -33,7 +33,7 @@
             "Write-Host '' ",
             "Write-Host '--- Uninstaller Script Debug ---'",
             "Write-Host 'Attempting to remove shortcut from Startup folder: ' ",
-            "Write-Host '$shortcutPath' ",
+            "Write-Host $shortcutPath ",
             "if (Test-Path $shortcutPath) {",
             "  Write-Host 'Shortcut found, attempting removal...'",
             "  Remove-Item $shortcutPath -Force",
