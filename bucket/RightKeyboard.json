@@ -20,9 +20,11 @@
         "Write-Host '' ",
         "Write-Host '' ",
         "Write-Host '--- Post-Install Debug ---'",
-        "Write-Host 'Created shortcut in Startup folder at: ' ",
+        "Write-Host 'Creating shortcut in Startup folder at: ' ",
         "Write-Host $shortcutPath ",
-        "Write-Host '--------------------------'"
+        "Write-Host '...done!' ",
+        "Write-Host '--------------------------'",
+        "Write-Host '' ",
     ],
     "uninstaller": {
         "script": [
