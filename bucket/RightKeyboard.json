@@ -22,7 +22,7 @@
         "Write-Host '--------------------------'"
     ],
     "uninstaller": {
-        "script": [ // CHANGED from "post_uninstall" to "script"
+        "script": [
             "$startupPath = [Environment]::GetFolderPath('Startup')",
             "$shortcutName = 'RightKeyboard.lnk'",
             "$shortcutPath = Join-Path $startupPath $shortcutName",
