@@ -17,20 +17,20 @@
         "$shortcut.TargetPath = \"$dir\\RightKeyboard.exe\"",
         "$shortcut.Save()"
     ],
-   "uninstaller": {
-    "post_uninstall": [
-        "$startupPath = [Environment]::GetFolderPath('Startup')",
-        "$shortcutPath = Join-Path $startupPath 'RightKeyboard.lnk'",
-        "Write-Host 'Checking for shortcut at: ' + $shortcutPath",
-        "if (Test-Path $shortcutPath) {",
-        "  Write-Host 'Shortcut found! Attempting to remove...'",
-        "  Remove-Item $shortcutPath -Force",
-        "  if (-not (Test-Path $shortcutPath)) { Write-Host 'Shortcut successfully removed.' } else { Write-Host 'Failed to remove shortcut.' }",
-        "} else {",
-        "  Write-Host 'Shortcut not found at the expected path.'",
-        "}"
-    ]
-},
+     "uninstaller": {
+        "post_uninstall": [
+            "$startupPath = [Environment]::GetFolderPath('Startup')",
+            "$shortcutPath = Join-Path $startupPath 'RightKeyboard.lnk'",
+            "Write-Host 'Checking for shortcut at: ' + $shortcutPath",
+            "if (Test-Path $shortcutPath) {",
+            "  Write-Host 'Shortcut found! Attempting to remove...'",
+            "  Remove-Item $shortcutPath -Force",
+            "  if (-not (Test-Path $shortcutPath)) { Write-Host 'Shortcut successfully removed.' } else { Write-Host 'Failed to remove shortcut.' }",
+            "} else {",
+            "  Write-Host 'Shortcut not found at the expected path.'",
+            "}"
+        ]
+    },
     "checkver": {
         "github": "https://github.com/mnivet/RightKeyboard"
     },
