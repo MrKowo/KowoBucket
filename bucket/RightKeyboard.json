@@ -17,6 +17,7 @@
         "$shortcut = $WshShell.CreateShortcut($shortcutPath)",
         "$shortcut.TargetPath = \"$dir\\RightKeyboard.exe\"",
         "$shortcut.Save()",
+        "Write-Host '' ",
         "Write-Host '--- Post-Install Debug ---'",
         "Write-Host 'Created shortcut in Startup folder at: ' $shortcutPath",
         "Write-Host '--------------------------'"
@@ -26,6 +27,7 @@
             "$startupPath = [Environment]::GetFolderPath('Startup')",
             "$shortcutName = 'RightKeyboard.lnk'",
             "$shortcutPath = Join-Path $startupPath $shortcutName",
+            "Write-Host '' ",
             "Write-Host '--- Uninstaller Script Debug ---'",
             "Write-Host 'Attempting to remove shortcut from Startup folder: ' $shortcutPath",
             "if (Test-Path $shortcutPath) {",
