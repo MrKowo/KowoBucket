@@ -19,7 +19,7 @@
         "Write-Host 'Created shortcut in Startup folder at: ' + $shortcutPath",
     ],
     "uninstaller": {
-        "post_uninstall": [
+        "script": [
             "$startupPath = [Environment]::GetFolderPath('Startup')",
             "$shortcutPath = Join-Path $startupPath 'RightKeyboard.lnk'",
             "if (Test-Path $shortcutPath) { Remove-Item $shortcutPath }",
