@@ -9,17 +9,8 @@
             "RightKeyboard"
         ]
     ],
-       "post_install": [
-        "$startupPath = [Environment]::GetFolderPath('Startup')",
-        "$shortcutName = 'RightKeyboard.lnk'",
-        "$shortcutPath = Join-Path $startupPath $shortcutName",
-        "$WshShell = New-Object -ComObject WScript.Shell",
-        "$shortcut = $WshShell.CreateShortcut($shortcutPath)",
-        "$shortcut.TargetPath = \"$dir\\RightKeyboard.exe\"",
-        "$shortcut.Save()",
-        "Write-Host '--- Post-Install Debug ---'",
-        "Write-Host 'Created shortcut in Startup folder at: ' + $shortcutPath",
-        "Write-Host '--------------------------'"
+    "post_install": [
+        "Write-Host '--- DEBUG: Post-install script is running! ---'"
     ],
     "uninstaller": {
         "post_uninstall": [
