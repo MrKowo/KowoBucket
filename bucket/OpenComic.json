@@ -6,7 +6,7 @@
     "homepage": "opencomic.app",
     "shortcuts": [
         [
-            "OpenComic.exe",
+            "OpenComic.Folder.Portable.v$version.exe",
             "OpenComic"
         ]
     ],
