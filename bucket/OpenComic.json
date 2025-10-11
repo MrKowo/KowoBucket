@@ -1,6 +1,6 @@
 {
-    "url": "https://github.com/ollm/OpenComic/releases/download/v1.6.3/OpenComic-Folder-Portable-1.6.3.7z",
-    "version": "1.6.3",
+    "url": "https://github.com/ollm/OpenComic/releases/download/download/v1.6.4/OpenComic-Folder-Portable-1.6.4.7z",
+    "version": "1.6.4",
     "license": "GPL-3.0",
     "homepage": "opencomic.app",
     "shortcuts": [
@@ -13,6 +13,6 @@
         "github": "https://github.com/ollm/OpenComic"
     },
     "autoupdate": {
-        "url": "https://github.com/ollm/OpenComic/releases/download/download/v$version/OpenComic-Folder-Portable-$version.7z",
+        "url": "https://github.com/ollm/OpenComic/releases/download/download/v$version/OpenComic-Folder-Portable-$version.7z"
     }
 }
