@@ -13,6 +13,6 @@
         "github": "https://github.com/ollm/OpenComic"
     },
     "autoupdate": {
-        "url": "https://github.com/ollm/OpenComic/releases/download/download/v$version/OpenComic-Folder-Portable-$version.7z"
+        "url": "https://github.com/ollm/OpenComic/releases/download/v$version/OpenComic-Folder-Portable-$version.7z"
     }
 }
