@@ -1,6 +1,6 @@
 # KowoBucket
 
-Scoop Bucket containing apps I use which aren't included in the official ones.
+Scoop Bucket containing useful apps which aren't included in the official ones.
 
 ## How do I use this?
 
